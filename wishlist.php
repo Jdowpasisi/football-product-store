@@ -1,7 +1,6 @@
 <?php
 require_once 'config.php';
 
-// Handle wishlist actions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['action'])) {
         $response = array();
@@ -36,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Get wishlist items
 $wishlist_items = array();
 
 if (!empty($_SESSION['wishlist'])) {
@@ -52,11 +50,9 @@ if (!empty($_SESSION['wishlist'])) {
 $page_title = 'Wishlist - SportsFit';
 $active_page = 'wishlist';
 
-// Include header
 include 'includes/header.php';
 ?>
 
-    <!-- Page Header -->
     <div class="page-header">
         <div class="container">
             <h1>My Wishlist</h1>
@@ -64,7 +60,6 @@ include 'includes/header.php';
         </div>
     </div>
 
-    <!-- Wishlist Section -->
     <section class="wishlist-section">
         <div class="container">
             <?php if (!empty($wishlist_items)): ?>

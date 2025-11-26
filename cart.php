@@ -66,11 +66,9 @@ if (!empty($_SESSION['cart'])) {
 $page_title = 'Shopping Cart - SportsFit';
 $active_page = 'cart';
 
-// Include header
 include 'includes/header.php';
 ?>
 
-    <!-- Page Header -->
     <div class="page-header">
         <div class="container">
             <h1>Shopping Cart</h1>
@@ -78,7 +76,6 @@ include 'includes/header.php';
         </div>
     </div>
 
-    <!-- Cart Section -->
     <section class="cart-section">
         <div class="container">
             <?php if (!empty($cart_items)): ?>
@@ -113,7 +110,7 @@ include 'includes/header.php';
                     <?php endforeach; ?>
                 </div>
 
-                <!-- Cart Summary -->
+
                 <div class="cart-summary">
                     <h3>Order Summary</h3>
                     <div class="summary-row">

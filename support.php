@@ -27,11 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_ticket'])) {
 $page_title = 'Customer Support - SportsFit';
 $active_page = 'support';
 
-// Include header
 include 'includes/header.php';
 ?>
 
-    <!-- Page Header -->
     <div class="page-header">
         <div class="container">
             <h1>Customer Support</h1>
@@ -39,11 +37,9 @@ include 'includes/header.php';
         </div>
     </div>
 
-    <!-- Support Section -->
     <section class="support-section">
         <div class="container">
             <div class="support-layout">
-                <!-- Contact Information -->
                 <div class="support-info">
                     <h2>Get in Touch</h2>
                     <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
@@ -91,7 +87,6 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="support-form-container">
                     <h2>Send us a Message</h2>
                     
